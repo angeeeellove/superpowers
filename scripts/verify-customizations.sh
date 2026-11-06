@@ -36,4 +36,21 @@ check skills/verification-before-completion/SKILL.md 'Diff Audit'       '验证�
 check skills/verification-before-completion/SKILL.md 'hardcoded secrets' '验证：密钥残留检查'
 check skills/verification-before-completion/SKILL.md 'AI slop'           '验证：slop 审计'
 
+# ── L1：disciplined-commit 原子提交纪律（与 ZCode AGENTS.md 双事实源）──
+check skills/disciplined-commit/SKILL.md 'type:中文描述'           '提交：message 格式行'
+check skills/disciplined-commit/SKILL.md '一个逻辑变更一个 commit' '提交：原子性原则'
+check skills/disciplined-commit/SKILL.md '硬编码密钥'              '提交：密钥残留检查'
+
+# ── L2：receiving-code-review 反馈甄别 ──
+check skills/receiving-code-review/SKILL.md 'Feedback Triage (hcj custom' '评审：甄别节'
+check skills/receiving-code-review/SKILL.md 'superpowers:disciplined-commit' '评审：有效发现转原子提交'
+
+# ── L2：dispatching-parallel-agents 并行度约束 ──
+check skills/dispatching-parallel-agents/SKILL.md 'Parallelism Cap (hcj custom' '并行：上限节'
+check skills/dispatching-parallel-agents/SKILL.md 'file-disjoint'               '并行：文件互斥判据'
+
+# ── L2：executing-plans 态势盘点 ──
+check skills/executing-plans/SKILL.md 'Situate (hcj custom' '执行：态势盘点节'
+check skills/executing-plans/SKILL.md 'related ticket/issue' '执行：工单关联'
+
 exit $fail
