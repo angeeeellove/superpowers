@@ -31,4 +31,9 @@ check skills/test-scoping/SKILL.md '@SpringBootTest' 'test-scoping：测试形�
 check skills/test-driven-development/SKILL.md 'superpowers:test-scoping' 'TDD：Step 0 指向 test-scoping'
 check skills/test-driven-development/SKILL.md 'Verdict S0'               'TDD：S0 豁免声明'
 
+# ── L2：verification diff 自查 ──
+check skills/verification-before-completion/SKILL.md 'Diff Audit'       '验证：diff 自查节'
+check skills/verification-before-completion/SKILL.md 'hardcoded secrets' '验证：密钥残留检查'
+check skills/verification-before-completion/SKILL.md 'AI slop'           '验证：slop 审计'
+
 exit $fail
