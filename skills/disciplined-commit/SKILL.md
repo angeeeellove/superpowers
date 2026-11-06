@@ -42,7 +42,7 @@ description: Use before any git commit, to enforce atomic commit discipline - on
 
 ## 双事实源
 
-本纪律与 ZCode 侧 `~/.zcode/AGENTS.md`「提交规范」及核心规则底线②为同一内容两处全文——**改一处必过另一处**（ZCode 无 superpowers，须独立成立）。登记表见仓库根 `CUSTOMIZATIONS.md`。
+本 skill 是 ZCode 侧 `~/.zcode/AGENTS.md`「提交规范」（工程细节节）与核心规则底线①内 diff 自查（无无关改动/调试残留/硬编码密钥）的**展开版**：ZCode 侧保留浓缩原文独立生效（ZCode 无 superpowers），本侧展开为可执行闸门——**改纪律实质内容时两边同步**。登记表见仓库根 `CUSTOMIZATIONS.md`。
 
 ## Final Rule
 
