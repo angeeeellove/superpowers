@@ -13,6 +13,10 @@ Write the test first. Watch it fail. Write minimal code to pass.
 
 **Violating the letter of the rules is violating the spirit of the rules.**
 
+## Step 0 — Test Scoping (hcj custom, mandatory)
+
+Before anything else, classify the target with **superpowers:test-scoping**. **Verdict S0 → leave this skill entirely**: no test is written, implement directly and finish with `superpowers:verification-before-completion`. This is a scoping decision made *before* this skill applies — not a rationalized exception to the Iron Law.
+
 ## When to Use
 
 **Always:**
