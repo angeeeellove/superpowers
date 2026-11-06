@@ -35,6 +35,10 @@ BEFORE claiming any status or expressing satisfaction:
 Skip any step = lying, not verifying
 ```
 
+## Diff Audit (hcj custom — required before completion claims on code work)
+
+Run `git diff` and audit it: **no unrelated changes** (every hunk traces to the task), **no debug residue** (`System.out`/`console.log`, commented-out code, hardcoded secrets), **no AI slop** (speculative rewrites, dead abstractions, references to renamed/deleted things). Residue in the diff = work not done. Fix it, don't excuse it.
+
 ## Common Failures
 
 | Claim | Requires | Not Sufficient |
