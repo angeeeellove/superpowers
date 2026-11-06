@@ -44,6 +44,10 @@ digraph when_to_use {
 - Need to understand full system state
 - Agents would interfere with each other
 
+## Parallelism Cap (hcj custom)
+
+Hard cap: **3 concurrent agents**. Dispatch only over **file-disjoint** work — if two tasks touch the same file, or one's output is the other's input (interface coupling), serialize them instead. Over-parallelism buys minutes and costs conflicts: merge collisions on shared files, integration bugs that surface only when both branches land. More than three domains → batch them: run three, integrate, then dispatch the next three.
+
 ## The Pattern
 
 ### 1. Identify Independent Domains
