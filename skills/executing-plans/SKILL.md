@@ -112,6 +112,12 @@ superpowers:using-git-worktrees to create one or verify the existing one.
 Never start implementation on a main/master branch without your human
 partner's explicit consent.
 
+**Situate (hcj custom):** before Task 1, pin the situation down in the
+ledger: the current branch and worktree state (the isolation check above),
+the related ticket/issue this plan serves, and the project conventions that
+bind execution — commit message style, test rules, doc organization. These
+ground the rulings you make later: project conventions outrun your defaults.
+
 Conversation memory does not survive compaction. An inline executor that
 loses its place re-implements tasks whose commits already exist — the same
 failure as a controller re-dispatching them, paid for in your own context.
