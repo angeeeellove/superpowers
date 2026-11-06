@@ -11,6 +11,10 @@ Code review requires technical evaluation, not emotional performance.
 
 **Core principle:** Verify before implementing. Ask before assuming. Technical correctness over social comfort.
 
+## Feedback Triage (hcj custom — before the response pattern)
+
+Classify each feedback item by **source** (your human partner / external human / automated bot or CI) and by **validity** (a real finding in this codebase, or noise). Automated findings are signal, not authority — verify the raw output against the codebase before treating it as a defect. Each validated finding lands as its own atomic commit per **superpowers:disciplined-commit** — one finding, one commit, never folded into unrelated changes.
+
 ## The Response Pattern
 
 ```
