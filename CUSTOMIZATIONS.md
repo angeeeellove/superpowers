@@ -25,8 +25,8 @@
 | # | 文件 | hook 内容 | 来源 | 状态 |
 |---|---|---|---|---|
 | 1 | `skills/test-driven-development/SKILL.md` | RED 之前加 Step 0：先跑 test-scoping 分级，S0 直接跳过 TDD 走实现+验证 | 自有核心规则 2 | ✅（v7.0.2-hcj.2） |
-| 2 | `skills/systematic-debugging/SKILL.md` | 根因确认后：先把 bug 固化为失败测试再修 | tony `tdd-fix` | ⬜ |
-| 3 | `skills/verification-before-completion/SKILL.md` | diff 自查清单（无无关改动、System.out/注释代码/硬编码密钥）+ AI slop 审计 + 验证=重新执行而非对照记忆 | 自有核心规则 3 × tony `slop`/`double-check` | ⬜ |
+| 2 | `skills/systematic-debugging/SKILL.md` | 根因确认后：先把 bug 固化为失败测试再修 | tony `tdd-fix` | ⛔ 取消：官方 7.0.2 已原生覆盖（Phase 4.1 Create Failing Test Case），试金石——插件已修不重复约束 |
+| 3 | `skills/verification-before-completion/SKILL.md` | diff 自查清单（无无关改动、System.out/注释代码/硬编码密钥）+ AI slop 审计 + 验证=重新执行而非对照记忆 | 自有核心规则 3 × tony `slop`/`double-check` | ✅（v7.0.2-hcj.3）：diff 自查节 3 行内嵌（固定短清单，独立 skill 无价值，形态偏差已记录）；double-check 官方已原生覆盖（Iron Law fresh evidence），未重复 |
 | 4 | `skills/receiving-code-review/SKILL.md` | 反馈甄别：先辨人/机器、是否有效发现，有效发现转原子提交 | tony `respond` | ⬜ |
 | 5 | `skills/subagent-driven-development/SKILL.md` | model 档位必填（机械=轻量档，终审与架构=最强档）；fix→re-review ≤2 轮熔断；briefing 必含精确接口签名；终审 subagent 不省 | 自有成本纪律（措辞去环境化） | ⬜ |
 | 6 | `skills/dispatching-parallel-agents/SKILL.md` | 并行度上限 3；文件互斥才并行，有共享文件/接口耦合降级串行 | 自有成本纪律 | ⬜ |
@@ -64,3 +64,4 @@ tony/skills 的依赖升级类（ruff/terraform/package-updater，非 Maven 体�
 
 - 2026-11-06 初版：登记表建立；基线 `v7.0.2-hcj.0`；版本标识 `7.0.2-hcj.1`；全部定制点待实施
 - 2026-11-06 批次 1（`v7.0.2-hcj.2`）：`test-scoping` skill、TDD Step 0 闸门、`verify-customizations.sh`（9 断言）落地
+- 2026-11-06 批次 2（`v7.0.2-hcj.3`）：验证 skill diff 自查节落地（3 行内嵌）；systematic-debugging 定制点取消（官方原生覆盖）；断言扩至 12 项
