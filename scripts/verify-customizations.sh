@@ -53,4 +53,9 @@ check skills/dispatching-parallel-agents/SKILL.md 'file-disjoint'               
 check skills/executing-plans/SKILL.md 'Situate (hcj custom' '执行：态势盘点节'
 check skills/executing-plans/SKILL.md 'related ticket/issue' '执行：工单关联'
 
+# ── L1：spike 技术验证与策略比选 ──
+check skills/spike/SKILL.md '不进主分支、不进提交历史' 'spike：隔离纪律'
+check skills/spike/SKILL.md '收敛熔断'                'spike：收敛熔断'
+check skills/spike/SKILL.md '决策记录'                'spike：决策记录'
+
 exit $fail
