@@ -14,6 +14,10 @@ People often haven't finished working out what they want. Good questions
 help them think it through. When you understand the why, you make the
 hundred decisions they never mention the way they would have made them.
 
+## Step 0 — Task Sizing (hcj custom, mandatory)
+
+Before anything else, size the task with **superpowers:task-sizing**. **L1 → leave this skill** (do it directly); **L2 → one-line plan, then do** — no questioning ceremony, no design doc; **only L3 continues here** (full flow, and only L3 produces a plan file). Unsure → size up one level; escalate immediately if it grows mid-work.
+
 ## First: What Do You Actually Know?
 
 Before you reply, ask yourself: what do I know about what they want, and
