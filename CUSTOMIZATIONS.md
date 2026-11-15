@@ -51,6 +51,7 @@ tony/skills 的依赖升级类（ruff/terraform/package-updater，非 Maven 体�
 - `marketplace.json` 的 `source: "./"`：插件内容 = 检出工作区本身
 - 本地路径安装：本地 clone 停在本分支即可（推荐，契合 `~/git/superpowers` 固定路径约定）
 - fork 远端安装：需把 GitHub 仓库默认分支切到本分支（Settings → General → Default branch）
+- **快照刷新（2026-11-15 实测教训）**：目录源安装按 `plugin.json` 版本号快照复制到 cache——定制批次落地后必须同步 bump 版本号（与当批 tag 对齐），再在 Claude Code 执行 marketplace update + plugin update 才会刷新；版本号不动则快照停留在旧批
 
 ## 同步合并流程（官方发版时）
 
