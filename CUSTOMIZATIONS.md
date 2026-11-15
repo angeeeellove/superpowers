@@ -17,7 +17,7 @@
 |---|---|---|---|---|
 | 1 | `skills/test-scoping/SKILL.md` | S0/S1/S2 测试必要性分级表（Java 企业栈特化：S0 纯 POJO/MapStruct/常量/枚举禁测；S1 Service 分支/算法/框架扩展点必测；S2 透传 Controller 不测；优先 Mockito 纯 Mock） | 自有 CLAUDE.md 测试铁律（全文下沉） | ✅ 已实施（v7.0.2-hcj.2） |
 | 2 | `skills/disciplined-commit/SKILL.md` | 原子提交纪律：`type:中文描述` 规范、提交前安全检查（无调试残留/硬编码密钥） | tony/skills `commit` × 自有提交规范 | ✅ 已实施（v7.0.2-hcj.4） |
-| 3 | `skills/spike/SKILL.md` | worktree 中无提交技术验证 / 策略比选 / 多轮收敛 | tony/skills `spike` | ⬜ 候选（L3 设计取舍场景） |
+| 3 | `skills/spike/SKILL.md` | worktree 中无提交技术验证 / 策略比选 / 多轮收敛 | tony/skills `spike` | ✅（v7.0.2-hcj.5）：与官方 brainstorming 轻量 spike 分工——官方管会话内随手验证，本 skill 管 L3 重档（隔离纪律/结构化比选/3 轮收敛熔断/决策记录） |
 | 4 | `scripts/verify-customizations.sh` | 定制断言脚本：grep 校验各 hook 行与关键表存在，合并后必跑 | 自有（tony evals 思想最小版） | ✅ 已实施（v7.0.2-hcj.2） |
 
 ## L2 薄改（每处 ≤3 行 hook）
@@ -67,3 +67,4 @@ tony/skills 的依赖升级类（ruff/terraform/package-updater，非 Maven 体�
 - 2026-11-06 批次 2（`v7.0.2-hcj.3`）：验证 skill diff 自查节落地（3 行内嵌）；systematic-debugging 定制点取消（官方原生覆盖）；断言扩至 12 项
 - 2026-11-06 批次 3（`v7.0.2-hcj.4`）：`disciplined-commit` skill、receiving-code-review 反馈甄别、dispatching-parallel-agents 并行度约束、executing-plans 态势盘点落地；subagent-driven-development 成本纪律定制点取消（官方原生覆盖+机制冲突）；断言扩至 21 项。至此除 `spike`（候选）与 `brainstorming`（观察中）外全部定制点收口；「全部 L2 落地→CLAUDE.md 收缩为指针」待 #8 brainstorming 出观察结论后一并执行
 - 2026-11-06 批次 3 终审修复：disciplined-commit 双事实源锚点 ②→①（diff 自查在底线①）、「两处全文」收敛为「展开版」表述；#5 取消理由编号指代修正（覆盖的是第 1/3/4 项）、熔断去向语义替换点明
+- 2026-11-15 批次 4（`v7.0.2-hcj.5`）：`spike` skill 落地（与官方轻量形态分工：隔离纪律/结构化比选/3 轮收敛熔断/决策记录）；断言扩至 24 项；批次 3 曾于另一会话完成、本会话核查断言后补推送 hcj.4。**定制线仅剩 #8 brainstorming 规模门（⏸ 等观察结论）**
