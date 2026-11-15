@@ -31,7 +31,7 @@
 | 5 | `skills/subagent-driven-development/SKILL.md` | model 档位必填（机械=轻量档，终审与架构=最强档）；fix→re-review ≤2 轮熔断；briefing 必含精确接口签名；终审 subagent 不省 | 自有成本纪律（措辞去环境化） | ⛔ 取消（批次 3 复核）：官方原生覆盖第 1/3/4 项（Model Selection 强制显式档位、brief 必含接口签名、final review 强制最强档）；第 2 项熔断由官方 5 轮上限+cap 裁决机制结构性覆盖，硬改轮次数与 `references/fix-loop.md` 内部机制冲突，冲突面大于收益；熔断后去向由「升级人工」换为官方「cap 后 controller 裁决+final review 复核 parked 项」 |
 | 6 | `skills/dispatching-parallel-agents/SKILL.md` | 并行度上限 3；文件互斥才并行，有共享文件/接口耦合降级串行 | 自有成本纪律 | ✅（v7.0.2-hcj.4）：Parallelism Cap 节内嵌 |
 | 7 | `skills/executing-plans/SKILL.md` | 开头加态势盘点：当前分支/worktree/相关工单/项目约定 | tony `situate` | ✅（v7.0.2-hcj.4）：Situate 段落入 Setup，盘点结论入 ledger（分支/worktree 官方已有，hook 补工单关联+项目约定） |
-| 8 | `skills/brainstorming/SKILL.md` | 顶部规模分级门：L1 直接做、L2 一句话方案、仅 L3 进全流程且仅 L3 产出计划文件 | 自有核心规则 1 | ⏸ 观察中：官方 7.0.1/7.0.2 连续 retune brainstorming，先实测 7.0.2 行为再定 |
+| 8 | `skills/brainstorming/SKILL.md` | 顶部规模分级门：L1 直接做、L2 一句话方案、仅 L3 进全流程且仅 L3 产出计划文件 | 自有核心规则 1 | ✅（v7.0.2-hcj.6）：Task Sizing Step 0 闸门内嵌，分级表由 L1 `task-sizing` skill 承载（brainstorming 为官方最高频改动文件，严格薄改） |
 
 ## 留守 L0（不进 fork）
 
@@ -68,3 +68,4 @@ tony/skills 的依赖升级类（ruff/terraform/package-updater，非 Maven 体�
 - 2026-11-06 批次 3（`v7.0.2-hcj.4`）：`disciplined-commit` skill、receiving-code-review 反馈甄别、dispatching-parallel-agents 并行度约束、executing-plans 态势盘点落地；subagent-driven-development 成本纪律定制点取消（官方原生覆盖+机制冲突）；断言扩至 21 项。至此除 `spike`（候选）与 `brainstorming`（观察中）外全部定制点收口；「全部 L2 落地→CLAUDE.md 收缩为指针」待 #8 brainstorming 出观察结论后一并执行
 - 2026-11-06 批次 3 终审修复：disciplined-commit 双事实源锚点 ②→①（diff 自查在底线①）、「两处全文」收敛为「展开版」表述；#5 取消理由编号指代修正（覆盖的是第 1/3/4 项）、熔断去向语义替换点明
 - 2026-11-15 批次 4（`v7.0.2-hcj.5`）：`spike` skill 落地（与官方轻量形态分工：隔离纪律/结构化比选/3 轮收敛熔断/决策记录）；断言扩至 24 项；批次 3 曾于另一会话完成、本会话核查断言后补推送 hcj.4。**定制线仅剩 #8 brainstorming 规模门（⏸ 等观察结论）**
+- 2026-11-15 规模门（`v7.0.2-hcj.6`）：实测确认 7.0.2 对 L2 仍有仪式感 → brainstorming Task Sizing Step 0 + `task-sizing` skill 落地；断言扩至 29 项。**12 个定制点全部收口：9 落地 + 3 取消（官方原生覆盖）**。后续顺序：①安装切换（卸官方版 → fork marketplace）→ ②CLAUDE.md 指针化收缩（**必须先装后缩**，避免约束真空）→ ③Actions 自动同步 workflow

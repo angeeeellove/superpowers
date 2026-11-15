@@ -58,4 +58,13 @@ check skills/spike/SKILL.md '不进主分支、不进提交历史' 'spike：隔�
 check skills/spike/SKILL.md '收敛熔断'                'spike：收敛熔断'
 check skills/spike/SKILL.md '决策记录'                'spike：决策记录'
 
+# ── L1：task-sizing 分级表（与 ZCode AGENTS.md 双事实源）──
+check skills/task-sizing/SKILL.md 'L1 琐碎'           '分级：L1 行'
+check skills/task-sizing/SKILL.md 'L3 复杂'           '分级：L3 行'
+check skills/task-sizing/SKILL.md '拿不准按上一级走'  '分级：升级规则'
+
+# ── L2：brainstorming Step 0 规模门 ──
+check skills/brainstorming/SKILL.md 'Task Sizing (hcj custom'  'brainstorming：Step 0 规模门'
+check skills/brainstorming/SKILL.md 'superpowers:task-sizing'  'brainstorming：指向 task-sizing'
+
 exit $fail
